@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy – Your Company</title>
+  <meta name="description" content="Privacy Policy and OAuth redirect helper for Amazon Login with Amazon (LwA) and Amazon Advertising API." />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:;" />
+  <style>
+    :root {
+      --bg:#f6f8f4;         /* light background */
+      --card:#ffffff;       /* card surface */
+      --ink:#223024;        /* deep green text */
+      --muted:#5f6d5f;      /* muted text */
+      --accent:#2a7a4b;     /* eco green */
+      --ok:#2a7a4b; --warn:#b8860b; --bad:#b23a3a;
+      --border:#e6efe6;     /* gentle green border */
+      --shadow:0 10px 25px rgba(34,48,36,.08);
+    }
+    html,body{height:100%}
+    body{
+      margin:0;
+      font:16px/1.6 system-ui,Segoe UI,Roboto,Helvetica,Arial;
+      color:var(--ink);
+      background:linear-gradient(180deg,#f9fbf8 0%,#f2f7f1 100%);
+    }
+    .wrap{max-width:980px;margin:auto;padding:24px}
+    header{display:flex;gap:16px;align-items:center;margin:18px 0 8px}
+    header h1{font-size:28px;margin:0}
+    .tagline{color:var(--muted);font-size:14px;margin-top:4px}
+    .badge{font-size:12px;letter-spacing:.4px;border:1px solid var(--border);color:var(--muted);padding:4px 8px;border-radius:999px;background:#f5faf4}
+    .card{
+      background:var(--card);
+      border:1px solid var(--border);
+      box-shadow:var(--shadow);
+      border-radius:16px;margin:18px 0;padding:20px
+    }
+    h2{margin:6px 0 10px;font-size:22px}
+    h3{margin:18px 0 6px;font-size:18px}
+    a{color:var(--accent);text-decoration:none}
+    a:hover{text-decoration:underline}
+    code,pre{background:#f3f7f2;border:1px solid var(--border);color:var(--ink);border-radius:8px}
+    code{padding:1px 6px}
+    .grid{display:grid;grid-template-columns:1fr;gap:16px}
+    @media (min-width:800px){.grid{grid-template-columns:2fr 1fr}}
+    .callout{border-left:3px solid var(--accent);padding:12px 12px 12px 14px;background:#f5faf4;border-radius:8px;margin:14px 0}
+    .pill{display:inline-block;padding:4px 10px;border-radius:999px;background:#f5faf4;border:1px solid var(--border);color:var(--muted);font-size:12px}
+    footer{color:#667a66;margin:28px 0 40px;font-size:13px}
+    .notice{font-size:13px;color:var(--muted)}
+    .ok{color:var(--ok)}.warn{color:var(--warn)}.bad{color:var(--bad)}
+    ul{margin:8px 0 8px 18px}
+    button{appearance:none;background:transparent;border:1px solid var(--accent);color:var(--accent);padding:8px 12px;border-radius:999px;cursor:pointer}
+    button:hover{background:#e9f6ef}
+    /* soft leaf watermark in corners */
+    body:before, body:after{
+      content:"";position:fixed;z-index:-1;opacity:.12;pointer-events:none
+    }
+    body:before{left:-120px;top:-80px;width:360px;height:360px;background:radial-gradient(closest-side,#9fd6b3,transparent)}
+    body:after{right:-100px;bottom:-100px;width:320px;height:320px;background:radial-gradient(closest-side,#bfe6c9,transparent)}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <svg width="36" height="36" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M19 3c-4.5 1-9 5-10 10-1 4 1 6 5 5 5-1 9-5.5 7-12-3 3-6 3-8 3 0-2 2-6 6-6z" fill="#2a7a4b" fill-opacity="0.3"/>
+        <path d="M12 20c-2.5 0-4-1.5-4-4 0-5.5 6-10 11-11" stroke="#2a7a4b" stroke-width="1.4" stroke-linecap="round"/>
+      </svg>
+      <div>
+        <h1 id="site-title">Leafline International Private Limited</h1>
+        <div class="tagline">Eco‑friendly bags & accessories — sustainably made</div>
+      </div>
+    </header>
+
+    <div class="grid">
+      <main class="card" id="privacy">
+        <h2>Privacy Policy</h2>
+        <p><strong>Effective date:</strong> 06 September 2025</p>
+        <p>This Privacy Policy explains how <strong id="companyName">Leafline International Private Limited</strong> ("we", "us") collects, uses, and protects information when you use our services, including our integrations with <strong>Login with Amazon (LwA)</strong> and the <strong>Amazon Advertising API</strong>.</p>
+
+        <h3>Who we are</h3>
+        <p>Legal entity: <span class="pill">Leafline International Pvt. Ltd.</span><br/>Contact: <a id="email" href="mailto:info@leafline.co.in">info@leafline.co.in</a></p>
+
+        <h3>Information we collect</h3>
+        <ul>
+          <li><strong>Account & Contact</strong>: name, email, company, role (when you contact us or sign up).</li>
+          <li><strong>Operational data</strong> from Amazon Ads: profile IDs, campaign/ad group/keyword entities, performance metrics (impressions, clicks, spend, sales, ACOS/ROAS), and settings (bids, budgets, negatives) that you authorize.</li>
+          <li><strong>Technical data</strong>: IP, device/browser, and basic logs used for security and troubleshooting.</li>
+          <li><strong>Cookies</strong>: only essential cookies for session and security. We do not use third‑party advertising cookies.</li>
+        </ul>
+
+        <h3>How we use information</h3>
+        <ul>
+          <li>To provide and improve campaign management features (e.g., launching campaigns, adjusting bids, adding negatives).</li>
+          <li>To authenticate and authorize requests using LwA and to call the Amazon Ads API on your behalf.</li>
+          <li>To troubleshoot, secure our services, and comply with applicable laws and Amazon policies.</li>
+        </ul>
+
+        <h3>Login with Amazon (LwA) & Amazon Ads API</h3>
+        <div class="callout">
+          We request only the scopes required for Amazon Ads. You can revoke access at any time from your Amazon account. Access tokens expire; we store refresh tokens securely to maintain your connection, if you choose to link your account.
+        </div>
+        <ul>
+          <li><strong>Lawful basis</strong>: performance of a contract and legitimate interests in providing the service.</li>
+          <li><strong>Data retention</strong>: operational data is retained as long as your account is active or as required by law; you can request deletion.</li>
+          <li><strong>Sharing</strong>: we do not sell your data. We may share with infrastructure providers (e.g., cloud hosting) under strict contracts.</li>
+        </ul>
+
+        <h3>Your rights</h3>
+        <p>Subject to local law, you may request access, correction, export, or deletion of your personal information. Contact us at <a href="mailto:info@leafline.co.in">info@leafline.co.in</a>.</p>
+
+        <h3>Security</h3>
+        <p>We use encryption in transit (HTTPS) and follow secure key handling for tokens and credentials. No method is 100% secure, but we strive to use industry best practices.</p>
+
+        <h3>Children</h3>
+        <p>Our services are not directed to children under 16. We do not knowingly collect information from children.</p>
+
+        <h3>International transfers</h3>
+        <p>Your information may be processed in countries different from yours. We rely on appropriate safeguards where required.</p>
+
+        <h3>Changes</h3>
+        <p>We may update this Policy. Material changes will be highlighted on this page with a new effective date.</p>
+
+        <h3>Contact</h3>
+        <p>Email: <a href="mailto:info@leafline.co.in">info@leafline.co.in</a>
+          </p>
+      </main>
+
+      <aside>
+        <section class="card" id="cookie">
+          <h3>Cookie Notice</h3>
+          <p>We use only essential cookies for security and session continuity. You can disable non‑essential cookies below (none are used by default).</p>
+          <button id="acceptCookies">Accept essential cookies</button>
+        </section>
+
+        <section class="card" id="oauth-helper">
+          <h3>OAuth Redirect Helper</h3>
+          <p>If you register this page URL as an LwA Redirect URI, it can display any <code>?code=</code> (Authorization Code) or <code>#access_token</code> fragments sent by Amazon so you can copy them for server‑side exchange.</p>
+          <div class="callout">
+            <div><strong>Detected parameters</strong></div>
+            <ul id="detected"></ul>
+            <div class="notice">Copy the code/token into your backend exchange step and then remove it from the URL.</div>
+          </div>
+          <p class="notice">Tip: Use a dedicated path like <code>https://&lt;username&gt;.github.io/privacy/#oauth-callback</code> or with query like <code>?source=amazon</code>. Register the exact redirect in the LwA console.</p>
+        </section>
+
+      </aside>
+    
+      <section class="card" id="eco">
+        <h3>Our Eco Promise</h3>
+        <p>We design durable, reusable products with a light footprint.</p>
+        <ul>
+          <li>Sustainably sourced materials (e.g., jute/cotton blends, recycled packaging).</li>
+          <li>Minimal plastics policy and optimized packaging sizes to reduce waste.</li>
+          <li>Repair‑friendly designs and long product lifecycles.</li>
+          <li>Exploring carbon‑neutral shipping options where available.</li>
+        </ul>
+        <p class="notice">Questions about our sustainability practices? Write to <a href="mailto:info@leafline.co.in">info@leafline.co.in</a>.</p>
+      </section>
+
+    </div>
+
+    <footer>
+      &copy; <span id="year"></span> 2025 Leafline International Private Limited. All rights reserved.
+    </footer>
+  </div>
+
+  <script>
+    // Live year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Simple cookie banner logic (essential only)
+    const cookieBtn = document.getElementById('acceptCookies');
+    const cookieStatus = document.getElementById('cookieStatus');
+    const KEY = 'cookieConsentEssential';
+    function setCookieState(v){ localStorage.setItem(KEY, v? '1':'0'); cookieStatus.textContent = 'Status: ' + (v? 'accepted':'declined'); }
+    function initCookie(){ const v = localStorage.getItem(KEY); if(v===null){ cookieStatus.textContent='Status: undecided'; } else { cookieStatus.textContent = 'Status: ' + (v==='1'? 'accepted':'declined'); } }
+    cookieBtn.addEventListener('click', ()=> setCookieState(true));
+    initCookie();
+
+    // OAuth helper: print query params and hash params
+    function toList(obj){ return Object.entries(obj).map(([k,v])=>`<li><code>${k}</code>: <strong>${String(v)}</strong></li>`).join(''); }
+    const ul = document.getElementById('detected');
+    const searchParams = Object.fromEntries(new URLSearchParams(window.location.search).entries());
+    const hashParams = Object.fromEntries(new URLSearchParams(window.location.hash.replace(/^#/, '')).entries());
+    const all = {...searchParams, ...hashParams};
+    ul.innerHTML = Object.keys(all).length? toList(all) : '<li>No OAuth parameters detected.</li>';
+  </script>
+</body>
+</html>
